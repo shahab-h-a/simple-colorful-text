@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #000000;
+}
+.text {
+    font-size: 150px;
+    font-weight: 1000;
+    margin: auto;
+    color: transparent;
+    background: #d13897;
+    background-clip: text;
+    animation: changeColor 5s linear infinite alternate ;
+}
+@keyframes changeColor {
+    25%{
+        color: #29ADB2;
+    }
+    50% {
+        color: #dd7f0c;
+    }
+    75% {
+        color: #7752FE;
+    }
+    100%{
+        color: #ADE792;
+    }
+}
+
+.text:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 20px #d7d5da9e;
+}
